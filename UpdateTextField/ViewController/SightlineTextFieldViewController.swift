@@ -13,13 +13,12 @@ import Foundation
 final class SightlineTextFieldViewController: UIViewController {
     enum Constant {
         static let textFieldInsets = NSDirectionalEdgeInsets(
-            top: Constant.navigationBarInsets.bottom + 9,
+            top: SheetNavigationBar.Constant.insets.bottom + 14,
             leading: 24,
             bottom: 40,
             trailing: 24
         )
 
-        static let navigationBarInsets = NSDirectionalEdgeInsets(topAndBottom: 7)
         static let cornerRadius: CGFloat = 16
     }
 
@@ -72,7 +71,7 @@ private extension SightlineTextFieldViewController {
     }
 
     func buildConstraints() {
-        navigationBar.constrainEdges(.top, with: Constant.navigationBarInsets)
+        navigationBar.constrainEdges(.top, with: SheetNavigationBar.Constant.insets)
         navigationBar.constrainEdges(.horizontal)
 
         sightlineTextField.constrain(.topAnchor, to: navigationBar.bottomAnchor, constant: Constant.textFieldInsets.top)

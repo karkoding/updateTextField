@@ -73,7 +73,6 @@
 				DAF9D70D29F297BC002314E1 /* ViewController */,
 				DAF9D6E929F29562002314E1 /* AppDelegate.swift */,
 				DAF9D6EB29F29562002314E1 /* SceneDelegate.swift */,
-				DAF9D6ED29F29562002314E1 /* ViewController.swift */,
 				DAF9D6EF29F29562002314E1 /* Main.storyboard */,
 				DAF9D6F229F29564002314E1 /* Assets.xcassets */,
 				DAF9D6F429F29564002314E1 /* LaunchScreen.storyboard */,
@@ -95,6 +94,7 @@
 		DAF9D70D29F297BC002314E1 /* ViewController */ = {
 			isa = PBXGroup;
 			children = (
+				DAF9D6ED29F29562002314E1 /* ViewController.swift */,
 				DAF9D70829F297B1002314E1 /* SightlineTextFieldViewController.swift */,
 			);
 			path = ViewController;

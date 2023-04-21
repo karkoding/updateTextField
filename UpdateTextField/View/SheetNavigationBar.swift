@@ -56,7 +56,7 @@ private extension SheetNavigationBar {
         if let title = navItem.title {
             navigationItem.title = title
             titleTextAttributes = appearance.getTitleAttributes(
-                additionalAttributes: [.foregroundColor: appearance.title.textColor ?? UIColor()],
+                additionalAttributes: [.foregroundColor: appearance.title.textColor],
                 traitCollection: traitCollection
             )
         }
@@ -69,7 +69,7 @@ private extension SheetNavigationBar {
     func makeLeftBarButton() -> UIBarButtonItem? {
         guard let leftButtonTitle = navItem.leftButtonTitle else { return  nil }
 
-        let leftButtonTitleColor = appearance.leftButtonTitle.textColor ?? UIColor()
+        let leftButtonTitleColor = appearance.leftButtonTitle.textColor
 
         let leftButtonItem = UIBarButtonItem(
             title: leftButtonTitle,
@@ -95,7 +95,7 @@ private extension SheetNavigationBar {
 
     func makeRightBarButton() -> UIBarButtonItem? {
         guard let rightButtonTitle = navItem.rightButtonTitle else { return nil }
-        let rightButtonTitleColor = appearance.rightButtonTitle.textColor ?? UIColor()
+        let rightButtonTitleColor = appearance.rightButtonTitle.textColor
 
         let rightButtonItem = UIBarButtonItem(
             title: rightButtonTitle,
